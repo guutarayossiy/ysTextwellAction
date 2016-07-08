@@ -1,3 +1,3 @@
 function taction() {
-  alert();
+  alert('test');
 }
