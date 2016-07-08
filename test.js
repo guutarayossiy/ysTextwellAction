@@ -1,4 +1,2 @@
-function taction() {
-  alert('test');
-  T( 'done' );
-};
+alert('rawgit test');
+T( 'done' );
