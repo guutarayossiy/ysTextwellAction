@@ -15,9 +15,9 @@
         .replace(/<h3>/g,"\n<h3>")
         .replace(/<\/h3>/g,"</h3>\n")
         .replace('<!--more-->',"\n<!--more-->\n")
-        .replace(/<pre>/g,"\n<pre>");
-        .replace(/<\/pre>/g,"</pre>\n");
-        .replace(/<pre><code>/g,"<pre>");
+        .replace(/<pre>/g,"\n<pre>")
+        .replace(/<\/pre>/g,"</pre>\n")
+        .replace(/<pre><code>/g,"<pre>")
         .replace(/<\/code><\/pre>/g,"</pre>");
 
     return result;

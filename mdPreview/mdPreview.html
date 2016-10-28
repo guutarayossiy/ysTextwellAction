@@ -5,7 +5,7 @@
 <title>Markdown Preview</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <script src="https://raw.github.com/chjj/marked/master/lib/marked.js"></script>
-<script src="https://raw.githubusercontent.com/yosiakatsuki/ysTextwellAction/master/test.js"></script>
+<script src="https://raw.github.com/yosiakatsuki/ysTextwellAction/master/mdPreview/mdReplace.js"></script>
 <link href="http://kevinburke.bitbucket.org/markdowncss/markdown.css" rel="stylesheet"></link>
 </head>
 <body>
@@ -15,7 +15,7 @@ var txtsplit = T.text.split("\n");
 var title = txtsplit[0]+"\n\n";
 txtsplit.shift();
 var maintxt = txtsplit.join("\n");
-var html = titletxt + marked(maintxt);
+var html = title + marked(maintxt);
 document.write(html);
 var out = mdreplace(html);
 
