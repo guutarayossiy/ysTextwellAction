@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>Markdown Preview</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script src="https://raw.github.com/chjj/marked/master/lib/marked.js"></script>
+<script src="https://raw.githubusercontent.com/yosiakatsuki/ysTextwellAction/master/test.js"></script>
+<link href="http://kevinburke.bitbucket.org/markdowncss/markdown.css" rel="stylesheet"></link>
+</head>
+<body>
+<script>
+
+var txtsplit = T.text.split("\n");
+var title = txtsplit[0]+"\n\n";
+txtsplit.shift();
+var maintxt = txtsplit.join("\n");
+var html = titletxt + marked(maintxt);
+document.write(html);
+var out = mdreplace(html);
+
+T.closelets([{
+   title: 'HTML出力',
+   fn: function() {
+          T('replace', {
+            text:out
+          });
+        }
+}]);
+</script>
+</body>
+</html>
