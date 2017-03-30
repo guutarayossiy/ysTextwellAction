@@ -7,6 +7,7 @@ function mdreplace(text){
         .replace(BlogTitle,'')
         .replace(/ id=".+?"/g,'')
         .replace('<p>[lastnumber]</p>',"\n[lastnumber]\n")
+        .replace('<p>[yshitokoto]</p>',"\n[yshitokoto]\n")
         .replace(/<p><p>/g,'<p>')
         .replace(/<\/p><\/p>/g,'</p>')
         .replace(/<h2>/g,"\n\n<h2>")
