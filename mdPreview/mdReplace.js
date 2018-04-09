@@ -14,8 +14,8 @@ function mdreplace(text){
         .replace(/<\/h3>/g,"</h3>\n")
         .replace('<!--more-->',"\n<!--more-->")
         .replace(/<pre>/g,"\n<pre>")
-        .replace(/<\/pre>/g,"</pre>\n\n")
-        .replace(/<figure>/g,"\n<figure>");
+        .replace(/<\/pre>/g,"</pre>\n\n");
+        //.replace(/<figure>/g,"\n<figure>");
         // .replace(/<pre><code>/g,"<pre>")
         // .replace(/<\/code><\/pre>/g,"</pre>");
 
